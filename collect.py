@@ -13,7 +13,7 @@ from parse_datex import parse_sites, parse_traffic, parse_weather
 BASE = "https://tarktee.transpordiamet.ee/api/v1/datex"
 FEEDS = {"weather": ("/weatherData", parse_weather), "traffic": ("/trafficData", parse_traffic)}
 OUT = Path("data")
-RADIUS_KM = 40.0
+RADIUS_KM = 1000.0
 
 
 def fetch_gz(endpoint, key):
